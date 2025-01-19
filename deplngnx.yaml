@@ -18,6 +18,9 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+          name: http-port
+        - containerPort: 443
+          name: https-port
         volumeMounts:
             - name: confngnx
               mountPath: /usr/share/nginx/html/
